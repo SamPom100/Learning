@@ -21,7 +21,6 @@ pub fn run(){
     //Placeholder for debut trait, can do multiple values
     println!("{:?}", (12, true, "helloooo"));
 
-
     //Basic math
     println!("10+10 = {}", 10+10);
     
