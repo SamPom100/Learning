@@ -3,6 +3,7 @@
 //Load files
 mod print;
 mod vars;
+mod types;
 
 //Cargo init to set up
 //Cargo run to run
@@ -13,5 +14,8 @@ fn main()
     print::run();
     println!("\n /////////////////////////////////////////////// \n\n");
     vars::run();
-    println!("\n\n\n\n");
+    println!("\n /////////////////////////////////////////////// \n\n");
+    types::run()
+    
+
 }

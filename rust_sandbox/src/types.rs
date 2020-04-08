@@ -7,8 +7,17 @@
     Array
 
 */
-pub fn run{
+pub fn run(){
 
+    //default is i32
+    let x = 1;
+
+    //default is f64
+    let y: i64 = 4545454545;
+
+    //find max size
+    println!("Max i32L {}", std::i32::MAX);
+    println!("Max i32L {}", std::i64::MAX);
 
 
 }
