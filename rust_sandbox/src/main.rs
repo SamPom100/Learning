@@ -1,9 +1,10 @@
-//https://www.youtube.com/watch?v=zF34dRivLOw at 25:29
+//https://www.youtube.com/watch?v=zF34dRivLOw at 44:44
 
 //Load files
 mod print;
 mod vars;
 mod types;
+mod strings;
 
 //Cargo init to set up
 //Cargo run to run
@@ -15,7 +16,9 @@ fn main()
     print();
     vars::run();
     print();
-    types::run()
+    types::run();
+    print();
+    strings::run()
     
 
 }
