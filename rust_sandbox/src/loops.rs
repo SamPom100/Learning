@@ -20,7 +20,7 @@ pub fn run() {
         } else if count % 3 == 0 {
             println!("Fizz");
         } else if count % 5 == 0 {
-            println!("Buzz")
+            println!("Buzz");
         } else {
             println!("{}", count);
         }
@@ -35,9 +35,15 @@ pub fn run() {
         } else if x % 3 == 0 {
             println!("Fizz");
         } else if x % 5 == 0 {
-            println!("Buzz")
+            println!("Buzz");
         } else {
             println!("{}", x);
         }
+    }
+
+    let string = "Hello Worlders";
+
+    for c in string.chars() {
+        println!("{}", c);
     }
 }
