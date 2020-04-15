@@ -16,6 +16,7 @@ mod vectors;
 //Cargo run to run
 fn main() {
     println!("Hello, world!");
+    println!("Rust Sample Code Output:");
 
     print::run();
     print();
