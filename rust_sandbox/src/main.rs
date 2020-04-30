@@ -1,7 +1,7 @@
 //https://www.youtube.com/watch?v=zF34dRivLOw at 1:19:12
 
 //test edit from github.com
-
+//sync using autogit.sh
 
 //Load files
 mod arrays;
