@@ -1,4 +1,4 @@
 # Learning different languages
-Includes Java, Rust, Python and Swift
+Includes Java, Rust, Python 
 
-Working on: React, JavaScript
+Working on: React, JavaScript, Swift
