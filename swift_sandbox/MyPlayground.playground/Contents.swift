@@ -394,6 +394,6 @@ for _ in 1...5 { //don't need a variable to loop in this case, use _
 
 print(lyric)
 
-
+//left off https://www.hackingwithswift.com/quick-start/beginners/how-to-use-a-for-loop-to-repeat-work
 
 
