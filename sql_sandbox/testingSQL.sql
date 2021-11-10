@@ -102,3 +102,74 @@ SELECT *
 FROM movies
 WHERE year BETWEEN 1990 AND 1999;
 
+SELECT *
+FROM movies
+WHERE name BETWEEN 'D' AND 'G'; --BETWEEN 'D' AND 'F' should not be the condition because it would return names that begin with ‘D’ and ‘E’, but not ‘F’ (unless there was a movie with the single letter name of “F”).
+
+--AND clause
+SELECT * 
+FROM movies
+WHERE year BETWEEN 1990 AND 1999
+   AND genre = 'romance';
+
+SELECT * 
+FROM movies
+WHERE year < 1985
+   AND genre == 'horror';
+
+--OR clause
+SELECT *
+FROM movies
+WHERE genre = 'romance' OR
+genre = 'comedy';
+
+--Sort alphabet using ORDER BY
+SELECT *
+FROM movies
+ORDER BY name;
+
+SELECT *
+FROM movies
+WHERE imdb_rating > 8
+ORDER BY year DESC;
+
+SELECT name, year, imdb_rating
+FROM movies
+ORDER BY imdb_rating DESC;
+
+--Limit number of returns for an SQL call
+SELECT *
+FROM movies
+LIMIT 10;
+
+--switch statements, CASE
+SELECT name,
+ CASE
+  WHEN imdb_rating > 8 THEN 'Fantastic'
+  WHEN imdb_rating > 6 THEN 'Poorly Received'
+  ELSE 'Avoid at All Costs'
+ END
+FROM movies;
+
+SELECT name,
+ CASE
+  WHEN genre = 'romance' THEN 'Chill'
+  WHEN genre = 'comedy' THEN 'Chill'
+  ELSE 'Intense'
+ END AS 'Mood'
+FROM movies;
+
+--Let’s summarize:
+--SELECT is the clause we use every time we want to query information from a database.
+--AS renames a column or table.
+--DISTINCT return unique values.
+--WHERE is a popular command that lets you filter the results of the query based on conditions that you specify.
+--LIKE and BETWEEN are special operators.
+--AND and OR combines multiple conditions.
+--ORDER BY sorts the result.
+--LIMIT specifies the maximum number of rows that the query will return.
+--CASE creates different outputs.
+
+
+
+--https://www.codecademy.com/courses/learn-sql/lessons/aggregate-functions/exercises/intro
