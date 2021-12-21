@@ -386,10 +386,12 @@ for i in 1..<5 {
     print("Counting 1 up to 5: \(i)")
 }
 
-var lyric = "Haters gonna"
+var lyric = "I am counting "
 
+var counter2 = 0
 for _ in 1...5 { //don't need a variable to loop in this case, use _
-    lyric += " hate"
+    lyric += String(counter2) + " "
+    counter2+=1
 }
 
 print(lyric)
