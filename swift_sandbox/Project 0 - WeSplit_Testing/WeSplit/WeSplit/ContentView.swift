@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @State var tapCount = 0
+    @State private var name = ""
+    @State private var selectedStudent = "Harry"
+    let students = ["Harry", "Hermione", "Ron"]
     var body: some View {
         NavigationView { //adds a navigation bar
             Form {
@@ -24,8 +27,25 @@ struct ContentView: View {
                 Button("Tap Count: \(tapCount)"){
                     tapCount += 1
                 }
+                
+                Section{}
+                
+                Group {
+                    TextField("Enter your name", text: $name)
+                    Text("Hello, world!")
+                }
+                
+                Section{}
+                
+                
+                Picker("Select your student", selection: $selectedStudent) {
+                    ForEach(students, id: \.self) {
+                        Text($0)
+                    }
+                }
+            
             }
-            .navigationTitle("Swift Navigation")
+            .navigationTitle("\(name) Navigation")
             //.navigationBarTitleDisplayMode(.inline) //make font smaller
             
             
