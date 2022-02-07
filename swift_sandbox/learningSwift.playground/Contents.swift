@@ -42,6 +42,7 @@ print(isEvenNumber(in: 10))
 
 
 
+
 //optionals
 
 func weatherRec(_ weatherIn:String){
@@ -200,3 +201,6 @@ print(myInt)
 
 
 
+if let str222 = readLine() {
+   print(str222)
+}
