@@ -21,7 +21,7 @@ long sumit(void){
 }
 
 
-int main() {
+int mainTwo() {
     long test = sumit();
     XARRAY[0] = 1;
     printf("%ld", test);
