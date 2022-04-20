@@ -22,6 +22,7 @@ clean:
 	rm -f *.o 
 	rm -f *.s 
 	rm *.o $(objects) main
+	rm -rf $(wildcard *.preprocessed.c)
 
 
 
