@@ -31,14 +31,16 @@ int main(){
     
     //Person defined as a pointer to NormalValues
     struct Person *p3 = &normalValues[0];
-    strcpy(p3->name, "helloN");
+    strcpy(p3->name, "hello!");
     p3->location = "NYC";
     
     printf("%d\n", p3->age);
     
     //Person defined directly from NormalValues?
     struct Person p4 = normalValues[0];
+    struct Person p6 = normalValues[1]; //how is this possible
     printf("%d\n", p4.age);
+    printf("%d\n", p6.age);
     
     p3->age = 30;
     
