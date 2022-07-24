@@ -1,4 +1,10 @@
 # Learning different languages
-Includes: Java, Rust, Python, HTML /CSS
-
-Working on: React, JavaScript, Swift
+Includes:
+- C
+- Go
+- Java
+- JS
+- Kotlin
+- Rust
+- SQL
+- Swift
